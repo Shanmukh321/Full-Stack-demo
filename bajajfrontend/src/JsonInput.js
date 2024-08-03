@@ -31,7 +31,7 @@ const JsonInput = () => {
         setError('');
         try {
             // Make POST request to backend
-            const response = await axios.post('http://localhost:3000/bfhl', JSON.parse(jsonInput));
+            const response = await axios.post('http://localhost:5000/bfhl', JSON.parse(jsonInput));
             setResponseData(response.data);
         } catch (error) {
             setError('Error calling the API: ' + error.message);
